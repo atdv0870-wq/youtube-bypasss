@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free HD adult videos, updated daily.">
+<title>TubeHub — Free HD Porn</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="agegate" id="agegate" hidden>
+  <div class="agegate__card">
+    <h1 class="logo">Tube<span>Hub</span></h1>
+    <p>This site contains adult material. Confirm you are 18 or older.</p>
+    <div class="agegate__actions">
+      <button class="btn btn--primary" data-age="yes">I'm 18+</button>
+      <button class="btn" data-age="no">Under 18</button>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <a class="logo" href="/">Tube<span>Hub</span></a>
+  <form class="search" id="search" role="search">
+    <input id="q" type="search" placeholder="Search videos, tags…" autocomplete="off" aria-label="Search">
+    <button class="btn btn--icon" type="submit" aria-label="Search">?</button>
+  </form>
+  <nav class="nav">
+    <a href="/" class="nav__link is-active">Home</a>
+    <a href="/?sort=popular" class="nav__link">Popular</a>
+    <a href="/?premium=1" class="nav__link">Premium</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero__inner">
+    <p class="hero__eyebrow">Updated every hour</p>
+    <h2>New scenes, no sign-up.</h2>
+    <p class="hero__sub">Thousands of free HD clips. Stream instantly, no account needed.</p>
+  </div>
+</section>
+
+<main>
+  <div class="chips" id="chips" aria-label="Categories">
+    <button class="chip is-active" data-cat="">All</button>
+  </div>
+
+  <div class="toolbar">
+    <p class="toolbar__count" id="count">Loading…</p>
+    <label class="sort">
+      Sort
+      <select id="sort">
+        <option value="recent">Newest</option>
+        <option value="popular">Most viewed</option>
+        <option value="liked">Top rated</option>
+        <option value="longest">Longest</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <div class="sentinel" id="sentinel"></div>
+  <p class="empty" id="empty" hidden>Nothing found. Try a different search.</p>
+</main>
+
+<footer class="footer">
+  <p>TubeHub © <span id="year"></span> — 2257 records available on request.</p>
+</footer>
+
+<div class="player" id="player" hidden aria-modal="true" role="dialog">
+  <div class="player__backdrop" data-close></div>
+  <div class="player__box">
+    <button class="player__close" data-close aria-label="Close">?</button>
+    <video id="video" controls playsinline preload="metadata"></video>
+    <div class="player__meta">
+      <h3 id="pTitle"></h3>
+      <p id="pStats" class="muted"></p>
+      <div class="player__tags" id="pTags"></div>
+      <div class="player__actions">
+        <button class="btn" id="likeBtn">? Like</button>
+        <a class="btn btn--primary" id="downloadBtn" href="#" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/app.js" defer></script>
+</body>
+</html>
